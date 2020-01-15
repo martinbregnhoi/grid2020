@@ -13,8 +13,6 @@
             margin: 0 auto;
             padding: 10px;
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-auto-flow: dense;
             background: #ececec;
             grid-gap: 10px;
         }
@@ -24,6 +22,15 @@
             padding:10px;
             box-shadow: 0 10px 15px 5px rgba(0,0,0,.1);
         }
+        img{
+            max-width: 100%;
+        }
+        @media screen and (min-width:768px){
+
+            main{
+             grid-template-columns: repeat(5, 1fr);
+            grid-auto-flow: dense;
+            }
 
         article:nth-child(even) {
             max-width: 300px;
@@ -45,7 +52,7 @@
             grid-column: 3 / span 3;
             background:#fff;
         }
-
+}
     </style>
 </head>
 
