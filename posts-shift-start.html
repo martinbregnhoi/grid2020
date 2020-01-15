@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid placering</title>
+    <style>
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-auto-flow: dense;
+            background: #ccc;
+            grid-gap: 10px;
+        }
+
+        article {
+            border: 1px solid #000;
+        }
+
+        article:nth-child(even) {
+            max-width: 300px;
+            align-self: center;
+            justify-self: center;
+
+        }
+
+        article:nth-child(4n + 1) {
+          grid-column:1;
+            background: #fff;
+        }
+
+        article:nth-child(4n-1) {
+            grid-column: 2;
+            background:#fff;
+        }
+           article:nth-child(4n) {
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <article><img src="kagemand.png" alt="">1</article>
+        <article>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, et ipsum. Eveniet deleniti nesciunt, reprehenderit ducimus iusto asperiores id incidunt numquam at, facilis quaerat rerum nihil nemo accusantium laboriosam non.</article>
+        <article>3 <img src="kagemand.png" alt=""></article>
+        <article>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic, eveniet! Optio cupiditate eligendi aliquam saepe temporibus eveniet odit autem nihil aut illo atque iste similique labore quasi, dolores perspiciatis.</article>
+        <article>5 <img src="kagemand.png" alt=""></article>
+        <article>6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic, eveniet! Optio cupiditate eligendi aliquam saepe temporibus eveniet odit autem nihil aut illo atque iste similique labore quasi, dolores perspiciatis.</article>
+        <article>7 <img src="kagemand.png" alt=""></article>
+        <article>8 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic, eveniet! Optio cupiditate eligendi aliquam saepe temporibus eveniet odit autem nihil aut illo atque iste similique labore quasi, dolores perspiciatis.</article>
+        <article>9 <img src="kagemand.png" alt=""></article>
+        <article>10 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic, eveniet! Optio cupiditate eligendi aliquam saepe temporibus eveniet odit autem nihil aut illo atque iste similique labore quasi, dolores perspiciatis.</article>
+        <article>11 <img src="kagemand.png" alt=""></article>
+        <article>12 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic, eveniet! Optio cupiditate eligendi aliquam saepe temporibus eveniet odit autem nihil aut illo atque iste similique labore quasi, dolores perspiciatis.</article>
+
+    </main>
+</body></html>
