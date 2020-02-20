@@ -7,14 +7,19 @@
         .container{
            display: grid;
             height: 100vh;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(4,1fr);
+
         }
      .item{
             border:1px solid #000;
             font-size: 60px;
         }
 
+        @media screen and (min-width:768px){
+
+            .container{
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,1fr);
+            }
         .item-a{
             grid-column: 1/ span 2;
             grid-row: 1/ span 2;
@@ -31,7 +36,7 @@
             grid-column: 2/5;
             grid-row: 3/5;
         }
-
+}
     </style>
 
 </head>
