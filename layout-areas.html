@@ -10,8 +10,7 @@
 
         .container {
             display: grid;
-            grid-template-areas: "header header""sidebar main""sidebar main""footer footer";
-            grid-template-rows: 120px 1fr 1fr 70px;
+            grid-template-areas: "header""main""sidebar""footer";
             grid-gap: 5px;
             height: 100vh;
         }
@@ -46,6 +45,7 @@
 
             .container {
                 grid-template-areas: "header header header header""sidebar main main main""sidebar main main main""footer footer footer footer";
+                grid-template-rows: 120px 1fr 1fr 70px;
             }
 
 
@@ -55,10 +55,10 @@
 
 <body>
     <div class="container">
-        <div class="item item-a">A</div>
-        <div class="item item-b">B</div>
-        <div class="item item-c">C</div>
-        <div class="item item-d">D</div>
+        <div class="item item-a">Header</div>
+        <div class="item item-b">Sidebar</div>
+        <div class="item item-c">Main</div>
+        <div class="item item-d">Footer</div>
     </div>
 
 </body></html>
