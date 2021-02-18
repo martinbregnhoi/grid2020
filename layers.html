@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layers</title>
+    <style>
+        section{
+            display:grid;
+            max-width: 50vw;
+        }
+        img , h2{
+            grid-area: 1 / 1;
+        }
+        h2{
+            place-self:center;
+            color:#f00;
+            text-shadow: #000 5px 5px 6px;
+            font-size: 6vw;
+        }
+        img{
+            width: 100%;
+            object-fit:cover;
+
+        }
+
+    </style>
+</head>
+<body>
+   <section>
+       <img src="kagemand.png" alt="">
+       <h2>Kagemand</h2>
+   </section>
+
+</body>
+</html>

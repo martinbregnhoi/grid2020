@@ -22,27 +22,31 @@
 
         article:nth-child(odd) {
             background: #fff;
+
         }
 
         @media screen and (min-width:768px) {
 
             main {
-                grid-template-columns: 2fr 2fr;
+                grid-template-columns: repeat(5,1fr);
                 grid-auto-flow: dense;
-            }
-
-            article:nth-child(even) {
-                max-width: 300px;
-                align-self: center;
-                justify-self: center;
 
             }
 
-
-            article:nth-child(4n-1) {
-                grid-column: 2;
+            article:nth-child(odd) {
+        grid-column: span 4;
             }
 
+
+            article:nth-child(4n -1) {
+
+                background: #ca1;
+                grid-column: 2 / span 4;
+            }
+
+            article:nth-child(4){
+
+            }
 
         }
     </style>
