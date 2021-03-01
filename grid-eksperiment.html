@@ -6,7 +6,7 @@
  <style>
     main{
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+/*    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
         grid-gap: 5px;
 
         width:80vw;
@@ -22,6 +22,8 @@
         justify-content:center;
          text-align: center;
      }
+
+     @media screen and (min-width:768px){
        main {
                 grid-template-columns: repeat(12, 1fr);
 
@@ -30,7 +32,7 @@
                 grid-column:  span 5;
             }
             article:nth-child(12n + 2){
-                grid-column: 6 / span 3;
+                grid-column: span 3;
             }
               article:nth-child(12n + 3){
                 grid-column: span 4;
@@ -62,6 +64,7 @@
             }
 
         }
+     }
    </style>
 </head>
 <body>
