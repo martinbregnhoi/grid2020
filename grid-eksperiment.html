@@ -8,26 +8,29 @@
     display:grid;
 /*    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
         grid-gap: 5px;
-
+grid-auto-rows: 1fr;
         width:80vw;
         max-width: 1200px;
         margin: 0 auto;
 
     }
      article{
-         min-height: 100px;
+       
+        border: 1px solid;
+        
        display:flex;
-         flex-direction: column;
+        flex-direction: column;
         justify-content:flex-end;
+       
      }
      article img{
-         border: 1px solid;
-         object-fit: cover;
+         object-fit: contain;
      }
 
      @media screen and (min-width:768px){
        main {
                 grid-template-columns: repeat(12, 1fr);
+                
 
             }
             article:nth-child(12n + 1){
