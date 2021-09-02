@@ -12,6 +12,7 @@ grid-auto-rows: 1fr;
         width:80vw;
         max-width: 1200px;
         margin: 0 auto;
+        grid-auto-flow: dense;
 
     }
      article{
@@ -35,12 +36,14 @@ grid-auto-rows: 1fr;
             }
             article:nth-child(12n + 1){
                 grid-column:  span 5;
+                
             }
             article:nth-child(12n + 2){
                 grid-column: span 3;
             }
               article:nth-child(12n + 3){
                 grid-column: span 4;
+                grid-row: span 2;
             }
               article:nth-child(12n + 4){
                 grid-column: span 3;
@@ -51,6 +54,7 @@ grid-auto-rows: 1fr;
             }
               article:nth-child(12n +7){
                 grid-column: span 2;
+                grid-row:span 2;
             }
               article:nth-child(12n + 8){
                 grid-column: span 4;
