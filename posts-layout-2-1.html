@@ -33,31 +33,33 @@
         @media screen and (min-width:768px){
 
             main{
-             grid-template-columns: repeat(5, 1fr);
-            grid-auto-flow: dense;
+        
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+           grid-auto-flow: dense;
             }
 
-        article:nth-child(even) {
-            max-width: 300px;
-            align-self: center;
-            justify-self: start;
-/*            place-self: center start;*/
-            grid-column: span 2;
-
-        }
-        article:nth-child(4n){
-          justify-self: end;
-        }
-
-        article:nth-child(4n + 1) {
-          grid-column:1 / span 3;
-
-        }
+     
+   
 
         article:nth-child(4n-1) {
-            grid-column: 3 / span 3;
+        
+            grid-column: 2/ span 2;
+            
 
         }
+         article:nth-child(4n+1) {
+        
+            grid-column: 1/ span 2;
+            
+
+        }
+
+        article:nth-child(even){
+            place-self: center;
+        
+        }
+
 }
     </style>
 </head>
@@ -78,6 +80,34 @@
         <article>12 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic, eveniet! Optio cupiditate eligendi aliquam saepe temporibus eveniet odit autem nihil aut illo atque iste similique labore quasi, dolores perspiciatis.</article>
         <article>13 <img src="kagemand.png" alt=""></article>
         <article>14 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic, eveniet! Optio cupiditate eligendi aliquam saepe temporibus eveniet odit autem nihil aut illo atque iste similique labore quasi, dolores perspiciatis.</article>
+        <article><img src="kagemand.png" alt="">1</article>
+        <article>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, et ipsum. Eveniet deleniti nesciunt,
+            reprehenderit ducimus iusto asperiores id incidunt numquam at, facilis quaerat rerum nihil nemo accusantium
+            laboriosam non.</article>
+        <article>3 <img src="kagemand.png" alt=""></article>
+        <article>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic, eveniet! Optio cupiditate
+            eligendi aliquam saepe temporibus eveniet odit autem nihil aut illo atque iste similique labore quasi, dolores
+            perspiciatis.</article>
+        <article>5 <img src="kagemand.png" alt=""></article>
+        <article>6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic, eveniet! Optio cupiditate
+            eligendi aliquam saepe temporibus eveniet odit autem nihil aut illo atque iste similique labore quasi, dolores
+            perspiciatis.</article>
+        <article>7 <img src="kagemand.png" alt=""></article>
+        <article>8 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic, eveniet! Optio cupiditate
+            eligendi aliquam saepe temporibus eveniet odit autem nihil aut illo atque iste similique labore quasi, dolores
+            perspiciatis.</article>
+        <article>9 <img src="kagemand.png" alt=""></article>
+        <article>10 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic, eveniet! Optio cupiditate
+            eligendi aliquam saepe temporibus eveniet odit autem nihil aut illo atque iste similique labore quasi, dolores
+            perspiciatis.</article>
+        <article>11 <img src="kagemand.png" alt=""></article>
+        <article>12 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic, eveniet! Optio cupiditate
+            eligendi aliquam saepe temporibus eveniet odit autem nihil aut illo atque iste similique labore quasi, dolores
+            perspiciatis.</article>
+        <article>13 <img src="kagemand.png" alt=""></article>
+        <article>14 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic, eveniet! Optio cupiditate
+            eligendi aliquam saepe temporibus eveniet odit autem nihil aut illo atque iste similique labore quasi, dolores
+            perspiciatis.</article>
 
     </main>
 </body></html>
