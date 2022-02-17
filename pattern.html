@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            width:70vw;
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap:5px;
+            background-color: #ccc;
+            margin: 0 auto;
+            height:90vh;
+        
+        }
+        article{
+           padding:10px;
+        }
+        article{
+            border:1px solid #000;
+        }
+        article:nth-of-type(4n+2){
+            grid-column: span 3;
+            background: #ca1;
+        }
+         article:nth-of-type(4n-1){
+            grid-column: span 3;
+            background: #123456;
+            color:#fff
+        }
+        article:first-of-type{
+            background-color: #fff;
+        }
+          article:last-of-type{
+            background-color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+  <main><article>lorem</article>
+  <article>loremLorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti suscipit cum nihil quibusdam? Molestias inventore facere facilis ratione voluptates error quasi saepe doloremque. Voluptas molestias sequi fugit necessitatibus? Esse, tempore!</article>
+  <article>loremlorem</article>
+  <article>loremlorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatum harum, ipsam quisquam est et similique, necessitatibus quam deleniti dolor eum reprehenderit, enim tempora voluptatem. Vero debitis accusantium officia assumenda.</article>
+  <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos molestias odit, corrupti architecto, qui mollitia aliquid quaerat voluptas dolor, explicabo natus porro. Minima ducimus, asperiores fugiat optio rerum fuga quod!</article>
+  <article>loremlorem</article>
+  <article>loremlorem</article>
+  <article>loremlorem</article>
+  <article>loremlorem</article>
+  <article>loremlorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas quae reprehenderit hic maiores expedita soluta labore ducimus voluptatibus, aspernatur blanditiis repellendus? Reiciendis eos aliquam iste mollitia magnam tempore non!</article>
+  <article>loremlorem</article>
+  <article>loremlorem Lorem ipsum dolor sit amet.</article></main>  
+</body>
+</html>
